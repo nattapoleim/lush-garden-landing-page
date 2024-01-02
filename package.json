@@ -1,15 +1,19 @@
 {
+  "homepage": "https://nattapoleim.github.io/lush-garden-landing-page",
   "name": "lush-landing-page",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "lucide-vue-next": "^0.303.0",
     "vue": "^3.3.11"
   },
