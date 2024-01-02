@@ -27,7 +27,10 @@
 </script>
 
 <template>
-  <section class="max-w-6xl mx-auto my-20">
+  <section
+    id="blogs"
+    class="max-w-6xl mx-auto my-20 scroll-mt-20"
+  >
     <h2 class="mb-10 text-3xl font-bold text-center capitalize text-primary">
       Interesting blog to read
     </h2>

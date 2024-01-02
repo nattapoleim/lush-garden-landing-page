@@ -16,11 +16,11 @@
     },
     {
       href: '#delivery',
-      title: 'Deliverty',
+      title: 'Delivery',
     },
     {
-      href: '#blog',
-      title: 'Blog',
+      href: '#blogs',
+      title: 'Blogs',
     },
     {
       href: '#contact',
