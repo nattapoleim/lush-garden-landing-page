@@ -1,25 +1,29 @@
 <script setup>
+  import IndoorPlant from '@/assets/about/indoor_Plant.svg';
+  import OutdoorPlant from '@/assets/about/outdoor_Plant.svg';
+  import Bamboo from '@/assets/about/Bamboo.svg';
+
   const aboutContent = {
     header: 'We Help choose the most suitable plants for you',
     desc: "Our selection includes a wide variety of flowers, from classic roses to exotic orchids, as well as a variety of lush indoor and outdoor plants and also offer unique floral arrangements that are perfect for any occasion, whether you're looking to brighten up your home or send a thoughtful gift.",
     cards: [
       {
         color: 'white',
-        icon: './src/assets/about/indoor_Plant.svg',
+        icon: IndoorPlant,
         title: 'Indoor Plants',
         content:
           'Bring the beauty of nature to your outdoor spaces with our wide selection of outdoor plants',
       },
       {
         color: 'green',
-        icon: './src/assets/about/outdoor_Plant.svg',
+        icon: OutdoorPlant,
         title: 'Outdoor Plants',
         content:
           'Bring a touch of greenery to your living spaces with our collection of indoor plants, perfect for purifying the air and adding a natural touch to your home.',
       },
       {
         color: 'white',
-        icon: './src/assets/about/Bamboo.svg',
+        icon: Bamboo,
         title: 'Plants Pots',
         content:
           'Add a touch of style to your indoor or outdoor spaces with our collection of pots plants, available in a variety of sizes and designs to fit any decor',

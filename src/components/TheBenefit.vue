@@ -1,22 +1,27 @@
 <script setup>
+  import QualityImg from '@/assets/benefit/quality-product.png';
+  import AlwaysImg from '@/assets/benefit/always-fresh.png';
+  import WorkImg from '@/assets/benefit/work-smart.png';
+  import ExcellentImg from '@/assets/benefit/excelent-service.png';
+
   const benefitContent = [
     {
-      img: './src/assets/benefit/quality-product.png',
+      img: QualityImg,
       title: 'Quality Product',
       desc: 'Our flowers are of the highest quality, carefully selected and sourced from reputable suppliers.',
     },
     {
-      img: './src/assets/benefit/always-fresh.png',
+      img: AlwaysImg,
       title: 'Always Fresh',
       desc: 'Our flowers are handpicked and delivered promptly for maximum freshness and enjoyment.',
     },
     {
-      img: './src/assets/benefit/work-smart.png',
+      img: WorkImg,
       title: 'Work Smart',
       desc: 'We use innovative techniques and technology to streamline our processes and provide efficient services.',
     },
     {
-      img: './src/assets/benefit/excelent-service.png',
+      img: ExcellentImg,
       title: 'Excellent Service',
       desc: "We pride ourselves on providing excellent service, going above and beyond to meet our customers' needs.",
     },

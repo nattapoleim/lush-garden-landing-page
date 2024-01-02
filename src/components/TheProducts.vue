@@ -3,10 +3,16 @@
 
   import ProductCard from '@/components/ui/ProductCard.vue';
 
+  //imgs
+  import Product1Img from '@/assets/products/product1.jpg';
+  import Product2Img from '@/assets/products/product2.jpg';
+  import Product3Img from '@/assets/products/product3.jpg';
+  import Product4Img from '@/assets/products/product4.jpg';
+
   const products = ref([
     {
       id: 1,
-      img: './src/assets/products/product1.jpg',
+      img: Product1Img,
       name: 'Some Plant',
       price: '10',
       currentPrice: '8',
@@ -14,7 +20,7 @@
     },
     {
       id: 2,
-      img: './src/assets/products/product2.jpg',
+      img: Product2Img,
       name: 'Some Plant',
       price: '10',
       currentPrice: '8',
@@ -22,7 +28,7 @@
     },
     {
       id: 3,
-      img: './src/assets/products/product3.jpg',
+      img: Product3Img,
       name: 'Some Plant',
       price: '10',
       currentPrice: '8',
@@ -30,7 +36,7 @@
     },
     {
       id: 4,
-      img: './src/assets/products/product4.jpg',
+      img: Product4Img,
       name: 'Some Plant',
       price: '10',
       currentPrice: '8',
@@ -38,7 +44,7 @@
     },
     {
       id: 5,
-      img: './src/assets/products/product1.jpg',
+      img: Product1Img,
       name: 'Some Plant',
       price: '10',
       currentPrice: '8',
@@ -46,7 +52,7 @@
     },
     {
       id: 6,
-      img: './src/assets/products/product2.jpg',
+      img: Product2Img,
       name: 'Some Plant',
       price: '10',
       currentPrice: '8',
@@ -54,7 +60,7 @@
     },
     {
       id: 7,
-      img: './src/assets/products/product3.jpg',
+      img: Product3Img,
       name: 'Some Plant',
       price: '10',
       currentPrice: '8',
@@ -62,7 +68,7 @@
     },
     {
       id: 8,
-      img: './src/assets/products/product4.jpg',
+      img: Product4Img,
       name: 'Some Plant',
       price: '10',
       currentPrice: '8',
