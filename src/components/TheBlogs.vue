@@ -3,21 +3,21 @@
 
   const blogsContent = [
     {
-      cover: '/src/assets/blogs/blog1.png',
+      cover: './src/assets/blogs/blog1.png',
       title: 'More productive with an atmosphere of greenery',
       content:
         'An atmosphere of greenery can increase productivity in the workplace. Studies show that plants improve air quality and decrease stress...',
       date: 'December 20, 2023',
     },
     {
-      cover: '/src/assets/blogs/blog2.png',
+      cover: './src/assets/blogs/blog2.png',
       title: 'The benefits of plants in your room',
       content:
         'Plants in your room can bring numerous benefits, such as improved air quality, reduced stress, and increased feelings of well-being....',
       date: 'December 10, 2023',
     },
     {
-      cover: '/src/assets/blogs/blog3.png',
+      cover: './src/assets/blogs/blog3.png',
       title: 'Hobbyist plants in the house',
       content:
         'Having hobbyist plants in the house is a great way to bring nature indoors. Not only do they purify the air, but they....',

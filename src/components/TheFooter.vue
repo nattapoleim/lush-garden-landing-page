@@ -72,7 +72,7 @@
     <div class="absolute right-20 -bottom-36">
       <img
         class="w-60 opacity-20"
-        src="@/assets/footer/footer2.png"
+        :src="'./src/assets/footer/footer2.png'"
         alt="footer1"
       />
     </div>
@@ -80,7 +80,7 @@
     <div class="absolute hidden md:block left-20 -bottom-36">
       <img
         class="opacity-20 w-60"
-        src="@/assets/footer/footer1.png"
+        :src="'./src/assets/footer/footer1.png'"
         alt="footer1"
       />
     </div>

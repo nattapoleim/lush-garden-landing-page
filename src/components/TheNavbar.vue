@@ -56,7 +56,7 @@
       <div class="navbar-start">
         <a href="#home">
           <img
-            src="@/assets/logo.svg"
+            :src="'./src/assets/logo.svg'"
             alt="logo"
             class="w-20"
           />

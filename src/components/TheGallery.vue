@@ -1,10 +1,10 @@
 <script setup>
   const galleryImg = {
-    gal1: '/src/assets/gallery/gal1.png',
-    gal2: '/src/assets/gallery/gal2.png',
-    gal3: '/src/assets/gallery/gal3.png',
-    gal4: '/src/assets/gallery/gal4.png',
-    gal5: '/src/assets/gallery/gal5.png',
+    gal1: './src/assets/gallery/gal1.png',
+    gal2: './src/assets/gallery/gal2.png',
+    gal3: './src/assets/gallery/gal3.png',
+    gal4: './src/assets/gallery/gal4.png',
+    gal5: './src/assets/gallery/gal5.png',
   };
 
   const imgHover = 'hover:scale-110 duration-300';

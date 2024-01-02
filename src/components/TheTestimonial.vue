@@ -1,18 +1,18 @@
 <script setup>
   const testimonailContent = [
     {
-      profile: '/src/assets/testimonial/jessica-watson.png',
+      profile: './src/assets/testimonial/jessica-watson.png',
       name: 'Jessica Watson',
       review:
         '“ Highly recommend this website for quality flowers and plants. Great prices, timely delivery and excellent customer service. ”',
     },
     {
-      profile: '/src/assets/testimonial/kate-szu.png',
+      profile: './src/assets/testimonial/kate-szu.png',
       name: 'Kate Szu',
       review: '"Great service, beautiful flowers, timely delivery. Highly recommend."',
     },
     {
-      profile: '/src/assets/testimonial/grace.png',
+      profile: './src/assets/testimonial/grace.png',
       name: 'Grace',
       review:
         '"I am very happy with my purchase from this website, the plants were healthy and arrived on time.”',
