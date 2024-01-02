@@ -25,7 +25,7 @@
 
 
 <template>
-  <section class="flex flex-col mx-auto my-20 lg:flex-row xl:max-w-6xl">
+  <section class="flex flex-col mx-auto my-20 lg:flex-row 2xl:max-w-6xl">
     <div class="flex-1">
       <img src="@/assets/benefit/benefit-img.png" alt="benefit-img">
     </div>
