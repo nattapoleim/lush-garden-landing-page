@@ -1,0 +1,26 @@
+@import './assets/fonts/lato-font.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: Lato;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply rounded-md;
+  }
+
+  .btn-white {
+    @apply text-white border-white btn btn-outline hover:bg-white/20 hover:text-white hover:border-white;
+  }
+
+  .btn-green {
+    @apply text-white bg-primary btn border-primary hover:bg-primary/80 hover:border-primary;
+  }
+}
