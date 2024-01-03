@@ -1,22 +1,28 @@
 <script setup>
-  import JessicaImg from '@/assets/testimonial/jessica-watson.png';
-  import KateImg from '@/assets/testimonial/kate-szu.png';
-  import GraceImg from '@/assets/testimonial/grace.png';
+  import JessicaImg from '@/assets/testimonial/jessica-watson.webp';
+  import KateImg from '@/assets/testimonial/kate-szu.webp';
+  import GraceImg from '@/assets/testimonial/grace.webp';
+  import JessicaSmallImg from '@/assets/testimonial/jessica-watson-small.webp';
+  import KateSmallImg from '@/assets/testimonial/kate-szu-small.webp';
+  import GraceSmallImg from '@/assets/testimonial/grace-small.webp';
 
   const testimonailContent = [
     {
       profile: JessicaImg,
+      profileSmall: JessicaSmallImg,
       name: 'Jessica Watson',
       review:
         '“ Highly recommend this website for quality flowers and plants. Great prices, timely delivery and excellent customer service. ”',
     },
     {
       profile: KateImg,
+      profileSmall: KateSmallImg,
       name: 'Kate Szu',
       review: '"Great service, beautiful flowers, timely delivery. Highly recommend."',
     },
     {
       profile: GraceImg,
+      profileSmall: GraceSmallImg,
       name: 'Grace',
       review:
         '"I am very happy with my purchase from this website, the plants were healthy and arrived on time.”',
@@ -40,7 +46,7 @@
         <div class="flex items-center justify-between gap-4 mb-7">
           <img
             class="w-16"
-            :src="person.profile"
+            v-lazy="{ src: person.profile, loading: person.profileSmall }"
             :alt="person.name"
           />
           <h3 class="flex-1 text-xl font-bold text-primary">{{ person.name }}</h3>

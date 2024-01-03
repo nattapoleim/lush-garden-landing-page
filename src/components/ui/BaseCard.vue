@@ -1,5 +1,5 @@
 <script setup>
-  const { icon, color, alt } = defineProps(['icon', 'color', 'alt']);
+  const { icon, smIcon, color, alt } = defineProps(['icon', 'smIcon', 'color', 'alt']);
 </script>
 
 <template>
@@ -9,8 +9,8 @@
   >
     <div class="flex justify-center md:max-lg:w-1/2 lg:justify-start">
       <img
-        class="md:max-lg:w-24"
-        :src="icon"
+        class="w-20 md:max-lg:w-24"
+        v-lazy="{ src: icon, loading: smIcon }"
         :alt="alt"
       />
     </div>

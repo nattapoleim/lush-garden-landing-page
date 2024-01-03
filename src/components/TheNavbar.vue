@@ -56,7 +56,7 @@
       <div class="navbar-start">
         <a href="#home">
           <img
-            src="@/assets/logo.svg"
+            v-lazy="{ src: './src/assets/logo.png', loading: './src/assets/logo-small.png' }"
             alt="logo"
             class="w-20"
           />

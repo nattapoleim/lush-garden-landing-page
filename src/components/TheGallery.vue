@@ -1,19 +1,16 @@
 <script setup>
-  import Gal1Img from '@/assets/gallery/gal1.png';
-  import Gal2Img from '@/assets/gallery/gal2.png';
-  import Gal3Img from '@/assets/gallery/gal3.png';
-  import Gal4Img from '@/assets/gallery/gal4.png';
-  import Gal5Img from '@/assets/gallery/gal5.png';
+  import Gal1Img from '@/assets/gallery/gal1.webp';
+  import Gal2Img from '@/assets/gallery/gal2.webp';
+  import Gal3Img from '@/assets/gallery/gal3.webp';
+  import Gal4Img from '@/assets/gallery/gal4.webp';
+  import Gal5Img from '@/assets/gallery/gal5.webp';
+  import Gal1SmallImg from '@/assets/gallery/gal1-small.webp';
+  import Gal2SmallImg from '@/assets/gallery/gal2-small.webp';
+  import Gal3SmallImg from '@/assets/gallery/gal3-small.webp';
+  import Gal4SmallImg from '@/assets/gallery/gal4-small.webp';
+  import Gal5SmallImg from '@/assets/gallery/gal5-small.webp';
 
-  const galleryImg = {
-    gal1: Gal1Img,
-    gal2: Gal2Img,
-    gal3: Gal3Img,
-    gal4: Gal4Img,
-    gal5: Gal5Img,
-  };
-
-  const imgHover = 'hover:scale-110 duration-300';
+  const imgHover = 'hover:scale-110 duration-300 w-full h-full';
 </script>
 
 <template>
@@ -24,7 +21,7 @@
         <img
           class="object-cover h-full"
           :class="imgHover"
-          :src="galleryImg.gal1"
+          v-lazy="{ src: Gal1Img, loading: Gal1SmallImg }"
           alt="gal1"
         />
       </div>
@@ -32,14 +29,14 @@
         <div class="overflow-hidden">
           <img
             :class="imgHover"
-            :src="galleryImg.gal2"
+            v-lazy="{ src: Gal2Img, loading: Gal2SmallImg }"
             alt="gal2"
           />
         </div>
         <div class="overflow-hidden">
           <img
             :class="imgHover"
-            :src="galleryImg.gal3"
+            v-lazy="{ src: Gal3Img, loading: Gal3SmallImg }"
             alt="gal3"
           />
         </div>
@@ -48,14 +45,14 @@
         <div class="overflow-hidden">
           <img
             :class="imgHover"
-            :src="galleryImg.gal4"
+            v-lazy="{ src: Gal4Img, loading: Gal4SmallImg }"
             alt="gal5"
           />
         </div>
         <div class="overflow-hidden">
           <img
             :class="imgHover"
-            :src="galleryImg.gal5"
+            v-lazy="{ src: Gal5Img, loading: Gal5SmallImg }"
             alt="gal4"
           />
         </div>

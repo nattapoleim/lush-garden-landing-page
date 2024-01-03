@@ -1,13 +1,17 @@
 <script setup>
   import { CalendarDays, ArrowRight } from 'lucide-vue-next';
 
-  import Blog1Img from '@/assets/blogs/blog1.png';
-  import Blog2Img from '@/assets/blogs/blog2.png';
-  import Blog3Img from '@/assets/blogs/blog3.png';
+  import Blog1Img from '@/assets/blogs/blog1.webp';
+  import Blog2Img from '@/assets/blogs/blog2.webp';
+  import Blog3Img from '@/assets/blogs/blog3.webp';
+  import Blog1SmallImg from '@/assets/blogs/blog1-small.webp';
+  import Blog2SmallImg from '@/assets/blogs/blog2-small.webp';
+  import Blog3SmallImg from '@/assets/blogs/blog3-small.webp';
 
   const blogsContent = [
     {
       cover: Blog1Img,
+      smCover: Blog1SmallImg,
       title: 'More productive with an atmosphere of greenery',
       content:
         'An atmosphere of greenery can increase productivity in the workplace. Studies show that plants improve air quality and decrease stress...',
@@ -15,6 +19,7 @@
     },
     {
       cover: Blog2Img,
+      smCover: Blog2SmallImg,
       title: 'The benefits of plants in your room',
       content:
         'Plants in your room can bring numerous benefits, such as improved air quality, reduced stress, and increased feelings of well-being....',
@@ -22,6 +27,7 @@
     },
     {
       cover: Blog3Img,
+      smCover: Blog3SmallImg,
       title: 'Hobbyist plants in the house',
       content:
         'Having hobbyist plants in the house is a great way to bring nature indoors. Not only do they purify the air, but they....',
@@ -49,8 +55,8 @@
         <div class="w-full group h-[22rem] rounded-lg overflow-hidden">
           <img
             class="object-cover w-full h-full duration-300 group-hover:scale-110 rounded-xl"
-            :src="blog.cover"
-            alt=""
+            v-lazy="{ src: blog.cover, loading: blog.smCover }"
+            alt="blog.title"
           />
         </div>
         <div class="flex flex-col justify-between flex-1 gap-2 mt-3">

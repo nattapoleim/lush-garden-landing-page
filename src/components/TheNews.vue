@@ -31,8 +31,16 @@
 <template>
   <section
     id="callus"
-    class="my-20 scroll-mt-28 2xl:max-w-6xl bg-[url('/src/assets/news/news-bg.png')] bg-cover bg-bottom mx-auto h-[30rem] text-white"
+    class="my-20 relative scroll-mt-28 2xl:max-w-6xl mx-auto h-[30rem] text-white"
   >
+    <img
+      class="absolute object-cover w-full h-full -z-10"
+      v-lazy="{
+        src: './src/assets/news/news-bg.webp',
+        loading: './src/assets/news/news-bg-small.webp',
+      }"
+      alt="bg-news"
+    />
     <div
       class="grid w-full h-full grid-cols-1 px-5 sm:px-20 lg:grid-cols-2 place-content-center bg-black/60"
     >

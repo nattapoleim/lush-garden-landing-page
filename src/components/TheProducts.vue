@@ -4,15 +4,20 @@
   import ProductCard from '@/components/ui/ProductCard.vue';
 
   //imgs
-  import Product1Img from '@/assets/products/product1.jpg';
-  import Product2Img from '@/assets/products/product2.jpg';
-  import Product3Img from '@/assets/products/product3.jpg';
-  import Product4Img from '@/assets/products/product4.jpg';
+  import Product1Img from '@/assets/products/product1.webp';
+  import Product2Img from '@/assets/products/product2.webp';
+  import Product3Img from '@/assets/products/product3.webp';
+  import Product4Img from '@/assets/products/product4.webp';
+  import Product1SmallImg from '@/assets/products/product1-small.webp';
+  import Product2SmallImg from '@/assets/products/product2-small.webp';
+  import Product3SmallImg from '@/assets/products/product3-small.webp';
+  import Product4SmallImg from '@/assets/products/product4-small.webp';
 
   const products = ref([
     {
       id: 1,
       img: Product1Img,
+      smImg: Product1SmallImg,
       name: 'Some Plant',
       price: '10',
       currentPrice: '8',
@@ -21,6 +26,7 @@
     {
       id: 2,
       img: Product2Img,
+      smImg: Product2SmallImg,
       name: 'Some Plant',
       price: '10',
       currentPrice: '8',
@@ -29,6 +35,7 @@
     {
       id: 3,
       img: Product3Img,
+      smImg: Product3SmallImg,
       name: 'Some Plant',
       price: '10',
       currentPrice: '8',
@@ -37,6 +44,7 @@
     {
       id: 4,
       img: Product4Img,
+      smImg: Product4SmallImg,
       name: 'Some Plant',
       price: '10',
       currentPrice: '8',
@@ -45,6 +53,7 @@
     {
       id: 5,
       img: Product1Img,
+      smImg: Product1SmallImg,
       name: 'Some Plant',
       price: '10',
       currentPrice: '8',
@@ -53,6 +62,7 @@
     {
       id: 6,
       img: Product2Img,
+      smImg: Product2SmallImg,
       name: 'Some Plant',
       price: '10',
       currentPrice: '8',
@@ -61,6 +71,7 @@
     {
       id: 7,
       img: Product3Img,
+      smImg: Product3SmallImg,
       name: 'Some Plant',
       price: '10',
       currentPrice: '8',
@@ -69,6 +80,7 @@
     {
       id: 8,
       img: Product4Img,
+      smImg: Product4SmallImg,
       name: 'Some Plant',
       price: '10',
       currentPrice: '8',

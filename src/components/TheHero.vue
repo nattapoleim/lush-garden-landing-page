@@ -1,6 +1,7 @@
 <script setup>
   import TheNavbar from './TheNavbar.vue';
   import { PlayCircle } from 'lucide-vue-next';
+  // import BgSmall from '@/assets/hero-bg-small.webp';
 
   const heroContent = {
     head: "Nature's Beauty Delivered to You",
@@ -12,9 +13,12 @@
 
 <template>
   <section id="home">
-    <div
-      class="bg-[url('@/assets/hero-bg.png')] text-white bg-cover bg-no-repeat min-h-screen pb-10"
-    >
+    <div class="relative min-h-screen pb-10 text-white">
+      <img
+        class="absolute object-cover object-center w-full h-full -z-10"
+        v-lazy="{ src: './src/assets/hero-bg.webp', loading: './src/assets/hero-bg-small.webp' }"
+        alt="hero"
+      />
       <TheNavbar />
       <div class="flex flex-col items-center gap-8 pt-40 text-center">
         <h1 class="text-5xl font-bold sm:text-6xl">{{ heroContent.head }}</h1>
