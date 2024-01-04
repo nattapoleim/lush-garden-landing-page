@@ -3,6 +3,9 @@
 
   import { Menu } from 'lucide-vue-next';
 
+  import LogoImg from '@/assets/logo.png';
+  import LogoSmallImg from '@/assets/logo-small.png';
+
   const isMenuOpen = ref(false);
   const scrollY = ref(0);
 
@@ -56,7 +59,7 @@
       <div class="navbar-start">
         <a href="#home">
           <img
-            v-lazy="{ src: './src/assets/logo.png', loading: './src/assets/logo-small.png' }"
+            v-lazy="{ src: LogoImg, loading: LogoSmallImg }"
             alt="logo"
             class="w-20"
           />

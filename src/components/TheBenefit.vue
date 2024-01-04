@@ -7,6 +7,8 @@
   import AlwaysSmallImg from '@/assets/benefit/always-fresh-small.webp';
   import WorkSmallImg from '@/assets/benefit/work-smart-small.webp';
   import ExcelentSmallImg from '@/assets/benefit/excelent-service-small.webp';
+  import BenefitImg from '@/assets/benefit/benefit-img.webp';
+  import BenefitSmallImg from '@/assets/benefit/benefit-img-small.webp';
 
   const benefitContent = [
     {
@@ -41,8 +43,8 @@
     <div class="flex-1">
       <img
         v-lazy="{
-          src: './src/assets/benefit/benefit-img.webp',
-          loading: './src/assets/benefit/benefit-img-small.webp',
+          src: BenefitImg,
+          loading: BenefitSmallImg,
         }"
         alt="benefit-img"
       />
@@ -61,7 +63,7 @@
       >
         <div class="h-1/2">
           <img
-            class="w-20 mx-auto lg:mx-0 lg:pt-5"
+            class="w-20 lg:mx-0 lg:pt-5"
             v-lazy="{ src: item.img, loading: item.smImg }"
             :alt="item.title"
           />

@@ -1,6 +1,9 @@
 <script setup>
   import { ref, computed } from 'vue';
 
+  import newsBg from '@/assets/news/news-bg.webp';
+  import newsSmallBg from '@/assets/news/news-bg-small.webp';
+
   const emailInput = ref('');
   const errorMessage = ref(false);
   const successfully = ref(false);
@@ -36,8 +39,8 @@
     <img
       class="absolute object-cover w-full h-full -z-10"
       v-lazy="{
-        src: './src/assets/news/news-bg.webp',
-        loading: './src/assets/news/news-bg-small.webp',
+        src: newsBg,
+        loading: newsSmallBg,
       }"
       alt="bg-news"
     />

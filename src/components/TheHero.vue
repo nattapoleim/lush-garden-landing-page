@@ -1,7 +1,9 @@
 <script setup>
   import TheNavbar from './TheNavbar.vue';
   import { PlayCircle } from 'lucide-vue-next';
-  // import BgSmall from '@/assets/hero-bg-small.webp';
+
+  import HeroBg from '@/assets/hero-bg.webp';
+  import HeroSmallBg from '@/assets/hero-bg-small.webp';
 
   const heroContent = {
     head: "Nature's Beauty Delivered to You",
@@ -16,7 +18,7 @@
     <div class="relative min-h-screen pb-10 text-white">
       <img
         class="absolute object-cover object-center w-full h-full -z-10"
-        v-lazy="{ src: './src/assets/hero-bg.webp', loading: './src/assets/hero-bg-small.webp' }"
+        v-lazy="{ src: HeroBg, loading: HeroSmallBg }"
         alt="hero"
       />
       <TheNavbar />
