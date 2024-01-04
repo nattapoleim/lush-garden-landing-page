@@ -1,5 +1,7 @@
 # lush-garden-landing-page
 
+### [DEMO](https://nattapoleim.github.io/lush-garden-landing-page/)
+
 #### Designed from [figma](https://www.figma.com/community/file/1198094410138226771/lush-garden-florist-landing-page-design) by Nait Creative & Ilman Murfihi.
 
 <img width="1263" alt="ภาพถ่ายหน้าจอ 2567-01-02 เวลา 14 20 41" src="https://github.com/nattapoleim/lush-garden-landing-page/assets/151834049/8742d1a6-f737-4960-ae50-ead8bde3f8ab">
