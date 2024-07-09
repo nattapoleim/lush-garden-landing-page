@@ -1,14 +1,14 @@
 <script setup>
-  import QualityImg from '@/assets/benefit/quality-product.webp';
-  import AlwaysImg from '@/assets/benefit/always-fresh.webp';
-  import WorkImg from '@/assets/benefit/work-smart.webp';
-  import ExcelentImg from '@/assets/benefit/excelent-service.webp';
-  import QualitySmallImg from '@/assets/benefit/quality-product-small.webp';
-  import AlwaysSmallImg from '@/assets/benefit/always-fresh-small.webp';
-  import WorkSmallImg from '@/assets/benefit/work-smart-small.webp';
-  import ExcelentSmallImg from '@/assets/benefit/excelent-service-small.webp';
-  import BenefitImg from '@/assets/benefit/benefit-img.webp';
-  import BenefitSmallImg from '@/assets/benefit/benefit-img-small.webp';
+  import QualityImg from '@/assets/benefit/quality-product.webp'
+  import AlwaysImg from '@/assets/benefit/always-fresh.webp'
+  import WorkImg from '@/assets/benefit/work-smart.webp'
+  import ExcelentImg from '@/assets/benefit/excelent-service.webp'
+  import QualitySmallImg from '@/assets/benefit/quality-product-small.webp'
+  import AlwaysSmallImg from '@/assets/benefit/always-fresh-small.webp'
+  import WorkSmallImg from '@/assets/benefit/work-smart-small.webp'
+  import ExcelentSmallImg from '@/assets/benefit/excelent-service-small.webp'
+  import BenefitImg from '@/assets/benefit/benefit-img.webp'
+  import BenefitSmallImg from '@/assets/benefit/benefit-img-small.webp'
 
   const benefitContent = [
     {
@@ -35,7 +35,7 @@
       title: 'Excellent Service',
       desc: "We pride ourselves on providing excellent service, going above and beyond to meet our customers' needs.",
     },
-  ];
+  ]
 </script>
 
 <template>
@@ -63,7 +63,7 @@
       >
         <div class="h-1/2">
           <img
-            class="w-20 lg:mx-0 lg:pt-5"
+            class="w-20 mx-auto lg:mx-0 lg:pt-5"
             v-lazy="{ src: item.img, loading: item.smImg }"
             :alt="item.title"
           />
